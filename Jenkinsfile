@@ -20,11 +20,12 @@ pipeline {
     }
     stage('Package') {
       steps {
-        sh '/usr/bin/docker build -t dvisanand/bank-customer-service:latest .'
+        sh 'serverless package'
       }
     }
     stage('Deploy') {
       steps {
+        sh 'serverless deploy'
       }
     }
   }
