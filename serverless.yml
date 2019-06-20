@@ -1,4 +1,4 @@
-service: my-abc-service-api # NOTE: update this with your service name
+service: craigslist-scraper-api # NOTE: update this with your service name
 provider:
   name: aws
   runtime: java8
